@@ -1,0 +1,8 @@
+version: '3'
+services:
+  database:
+    image: "postgres" # last PG version
+    env_file:
+      - database.env # PG configure
+    ports:
+      - "5432:5432"
